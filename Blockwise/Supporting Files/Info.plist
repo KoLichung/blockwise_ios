@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>Google Sign In</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.960000725258-d2ukvi1dqcmv5ci90fo2esirm61ijtm6</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.ivansanna.ProductionAppBoundify</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>blockwise</string>
+			</array>
+		</dict>
+		<dict/>
+		<dict/>
+	</array>
+	<key>GIDClientID</key>
+	<string>960000725258-d2ukvi1dqcmv5ci90fo2esirm61ijtm6.apps.googleusercontent.com</string>
+	<key>NSAlarmKitUsageDescription</key>
+	<string>Alarms are used to notify when a selected app has been closed.</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>HankenGrotesk-SemiBold.ttf</string>
+		<string>HankenGrotesk-Bold.ttf</string>
+		<string>HankenGrotesk-Regular.ttf</string>
+		<string>HankenGrotesk-Medium.ttf</string>
+	</array>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortcutIcon.IconType.compose</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Send feedback before you delete</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>🥺 Deleting? Tell us why.</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>openGoogleForm</string>
+		</dict>
+	</array>
+</dict>
+</plist>

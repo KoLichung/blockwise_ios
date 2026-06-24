@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="24411" systemVersion="25B78" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="BlockEntity" representedClassName="BlockEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="appModelStableId" optional="YES" attributeType="String"/>
+        <attribute name="appTokenString" optional="YES" attributeType="String"/>
+        <attribute name="cooldown" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="dailyOpenLimit" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dailyTimeLimit" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="identifier" optional="YES" attributeType="String"/>
+        <attribute name="isDeactivated" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="isOpen" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="nextAvailableDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="openEndTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="openStartTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="warningNotificationId" optional="YES" attributeType="String"/>
+        <attribute name="windowEnd" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="windowStart" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="recordRelationship" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RecordEntity" inverseName="block" inverseEntity="RecordEntity"/>
+    </entity>
+    <entity name="ReadArticle" representedClassName="ReadArticle" syncable="YES" codeGenerationType="class">
+        <attribute name="articleId" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RecordEntity" representedClassName="RecordEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="crossDay" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="block" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BlockEntity" inverseName="recordRelationship" inverseEntity="BlockEntity"/>
+    </entity>
+    <entity name="ScheduleEntity" representedClassName="ScheduleEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="color" optional="YES" attributeType="String"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="icon" optional="YES" attributeType="String"/>
+        <attribute name="identifier" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="selectionKey" optional="YES" attributeType="String"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="lastStreakReset" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="screenTimeGoal" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="WatchedVideo" representedClassName="WatchedVideo" syncable="YES" codeGenerationType="class">
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="videoId" optional="YES" attributeType="String"/>
+    </entity>
+</model>
